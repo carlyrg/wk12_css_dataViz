@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Dashboard</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="overrideBootstrap.css">
+    <!--type="text/css" href="bootstrap.css"-->
+
+</head>
+
+<body class="grey">
+    <!-- navigation-->
+    <div class="container-fluid pb-5">
+        <nav class="navbar navbar-expand-md navbar-light bg-white navbar-custom sticky-top px-0  py-0 inline-block">
+            <a class="navbar-brand blue-bg text-light px-3 py-3" id="serif-font" href="index.html">Lattitude</a>
+            <button class="navbar-toggler navbar-dark  mx-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav bg-white ml-auto ">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home
+
+                        </a>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Plots
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="DayOfWeek.html">Distribution by Day of Week</a>
+                            <a class="dropdown-item active" href="#">Breakdown by Age</a>
+                            <span class="sr-only">(current)</span>
+                            <a class="dropdown-item" href="TimeOfDay.html">Time of Day</a>
+                            <a class="dropdown-item" href="duration.html">Length of Trip</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparison.html">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html">Data</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!--content-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-8 py-3 mx-auto m-1 bg-white media-body">
+                <h3 class="mb-3 blue-txt" id="serif-font">Age Demographics</h3>
+                <hr>
+                <h5 class="text-center">Riders by Age in New York</h5>
+                <img src="images/ny_age.png" class="d-block mx-auto img-fluid mb-5" alt="Riders by Age in New York"></img>
+                <h5 class="text-center">Riders by Age in San Francisco</h5>
+                <img src="images/SF_age.png" class="d-block mx-auto img-fluid mb-5" alt="Riders by Age in San Francisco"></img>
+                <p>These two graphs compare the ages of rides in both New York and San Francisco, showing that the 20 and 30
+                    year-olds are the dominant users in both cities. Beyond that, these pie graphs are rather useless.
+                </p>
+            </div>
+            <div class="col-sm-12 col-lg-4 py-3 m-1 bg-white">
+                <h3 class="mb-3 blue-txt" id="serif-font">Visualizations</h3>
+                <hr>
+                <div class="row ">
+                    <div class="col-sm-3 col-md-6 mb-3 mx-auto text-center">
+                        <a href="DayOfWeek.html">
+                        <img class="img-fluid" src="images/dow_dist_thumb.png"></img></a>
+                    </div>
+                    <div class="col-sm-3 col-md-6 mb-3 mx-auto  text-center">
+                        <a href="Age.html">
+                        <img class="img-fluid blue-border" src="images/ny_age_thumb.png"></img></a>
+                    </div>
+                    <!--breaks columns into 2 rows-->
+                    <!-- <div class="w-100"></div> -->
+ 
+                    <div class="col-sm-3 col-md-6 mb-3 mx-auto text-center">
+                        <a href="TimeOfDay.html">
+                        <img class="img-fluid" src="images/start_time_sf_thumb.png"></img></a>
+                    </div>
+                    <div class="col-sm-3 col-md-6 mb-3 mx-auto  text-center">
+                        <a href="duration.html">
+                        <img class="img-fluid" src="images/trip_age_duration_thumb.png"></img></a>
+                    </div>
+                    <!-- </div> -->
+
+                </div>
+
+            </div>
+        </div>
+        <div class="push"></div>
+    </div>
+    <!--end main container-->
+    <div>
+        <footer class="footer bg-dark">
+            <div class="container-fluid">
+                <p class="text-muted text-center" id="textHere">copyright 2018</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

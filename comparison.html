@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Dashboard</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="overrideBootstrap.css">
+    <!--type="text/css" href="bootstrap.css"-->
+
+</head>
+
+
+<body class="grey">
+    <!-- navigation-->
+    <div class="container-fluid pb-5">
+        <nav class="navbar navbar-expand-md navbar-light bg-white navbar-custom sticky-top px-0  py-0 inline-block">
+            <a class="navbar-brand blue-bg text-light px-3 py-3" id="serif-font" href="index.html">Lattitude</a>
+            <button class="navbar-toggler navbar-dark  mx-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav bg-white ml-auto ">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home
+
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Plots
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="DayOfWeek.html">Distribution by Day of Week</a>
+                            <a class="dropdown-item" href="Age.html">Breakdown by Age</a>
+                            <a class="dropdown-item" href="TimeOfDay.html">Time of Day</a>
+                            <a class="dropdown-item" href="duration.html">Length of Trip</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Comparison</a>
+                        <span class="sr-only">(current)</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html">Data</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!--content-->
+    <div class="container">
+        <div class="col-sm-12 col-lg-8 mx-auto py-3 m-1 bg-white">
+            <h3 class="mb-3 blue-txt" id="serif-font">Comparisons</h3>
+            <hr>
+            <div class="row mx-auto">
+                <p class="pb-3">Click any plot to get in-depth analysis.</p>
+                        <div class="row ">
+                            <div class="col-sm-12 col-md-6 mb-5 mx-auto text-center">
+                                    <h6>Day of the Week</h6>
+                                    <a href="DayOfWeek.html">
+                                <img class="img-fluid" src="images/dow_dist_comp.png"></img></a>
+                            </div>
+                            <div class="col-sm-12 col-md-6 mb-5 mx-auto  text-center">
+                                    <h6>Age</h6>
+                                    <a href="Age.html">
+                                <img class="img-fluid" src="images/ny_age_comp.png"></img></a>
+                            </div>
+                            <!--breaks columns into 2 rows-->
+                            <!-- <div class="w-100"></div> -->
+        
+                            <div class="col-sm-12 col-md-6 mb-5 mx-auto text-center">
+                                    <h6>Time of Day</h6>
+                                    <a href="TimeOfDay.html">
+                                <img class="img-fluid" src="images/start_time_nyc_comp.png"></img></a>
+                            </div>
+                            <div class="col-sm-12 col-md-6 mb-5 mx-auto  text-center">
+                                    <h6>Trip Duration</h6>
+                                    <a href="duration.html">
+                                <img class="img-fluid" src="images/trip_age_duration_comp.png"></img></a>
+                            </div>
+
+        </div>
+    </div>
+    </div>
+    <div class="push"></div>
+    </div>
+    <!--end main container-->
+    <div>
+        <footer class="footer bg-dark">
+            <div class="container-fluid">
+                <p class="text-muted text-center" id="textHere">copyright 2018</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

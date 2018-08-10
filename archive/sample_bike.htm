@@ -1,0 +1,495 @@
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="overrideBootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/jq-3.3.1/dt-1.10.18/sc-1.5.0/datatables.min.css"
+    />
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 col-lg-8 py-3 mx-auto m-1 bg-white">
+      <h3 >Data</h3>
+      <hr>
+      <p>The following table includes a small sample of the data used in analyzing the city bike share programs.
+      </p>
+      <div class="table-striped table-bordered thead-dark table-scroll table-responsive" style="width:100%">
+        <table class="table small">
+          <thead>
+            <tr>
+              <td align="left">176705</td>
+              <td align="left">San Francisco</td>
+              <td align="left">3173</td>
+              <td align="left">2018-02-08 17:37:33.133</td>
+              <td align="left">2018-02-08 17:49:28.7460</td>
+              <td align="left">715</td>
+              <td align="left">Mechanics Monument Plaza (Market St at Bush St)</td>
+              <td align="left">37.7913</td>
+              <td align="left">-122.399051</td>
+              <td align="left">The Embarcadero at Bryant St</td>
+              <td align="left">37.78716801474664</td>
+              <td align="left">-122.38809792330359</td>
+              <td align="left">Subscriber</td>
+              <td align="left">1962.0</td>
+              <td align="left">Male</td>
+              <td align="left">56.0</td>
+            </tr>
+            <tr>
+              <td align="left">536653</td>
+              <td align="left">San Francisco</td>
+              <td align="left">218</td>
+              <td align="left">2018-05-17 04:44:13.320</td>
+              <td align="left">2018-05-17 04:53:41.5670</td>
+              <td align="left">568</td>
+              <td align="left">Fountain Alley at S 2nd St</td>
+              <td align="left">37.33618830029063</td>
+              <td align="left">-121.8892765045166</td>
+              <td align="left">Julian St at The Alameda</td>
+              <td align="left">37.3322326</td>
+              <td align="left">-121.9125165</td>
+              <td align="left">Subscriber</td>
+              <td align="left"></td>
+              <td align="left"></td>
+              <td align="left"></td>
+            </tr>
+            <tr>
+              <td align="left">254798</td>
+              <td align="left">San Francisco</td>
+              <td align="left">3138</td>
+              <td align="left">2018-03-20 19:29:58.877</td>
+              <td align="left">2018-03-20 19:32:04.5230</td>
+              <td align="left">125</td>
+              <td align="left">The Embarcadero at Steuart St</td>
+              <td align="left">37.79146400000001</td>
+              <td align="left">-122.391034</td>
+              <td align="left">Steuart St at Market St</td>
+              <td align="left">37.79413</td>
+              <td align="left">-122.39443</td>
+              <td align="left">Subscriber</td>
+              <td align="left">1973.0</td>
+              <td align="left">Male</td>
+              <td align="left">45.0</td>
+            </tr>
+            <tr>
+              <td align="left">610371</td>
+              <td align="left">San Francisco</td>
+              <td align="left">3092</td>
+              <td align="left">2018-05-04 08:40:26.004</td>
+              <td align="left">2018-05-04 08:57:33.9270</td>
+              <td align="left">1027</td>
+              <td align="left">24th St at Chattanooga St</td>
+              <td align="left">37.7518194</td>
+              <td align="left">-122.4266139</td>
+              <td align="left">Townsend St at 7th St</td>
+              <td align="left">37.771058</td>
+              <td align="left">-122.402717</td>
+              <td align="left">Subscriber</td>
+              <td align="left">1965.0</td>
+              <td align="left">Male</td>
+              <td align="left">53.0</td>
+            </tr>
+            <tr>
+              <td align="left">131784</td>
+              <td align="left">San Francisco</td>
+              <td align="left">2657</td>
+              <td align="left">2018-02-20 19:39:04.860</td>
+              <td align="left">2018-02-20 19:47:43.1080</td>
+              <td align="left">518</td>
+              <td align="left">Market St at Dolores St</td>
+              <td align="left">37.76930529999999</td>
+              <td align="left">-122.4268256</td>
+              <td align="left">Golden Gate Ave at Polk St</td>
+              <td align="left">37.78127</td>
+              <td align="left">-122.41874</td>
+              <td align="left">Subscriber</td>
+              <td align="left">1983.0</td>
+              <td align="left">Female</td>
+              <td align="left">35.0</td>
+            </tr>
+            <tr>
+              <td align="left">282517</td>
+              <td align="left">San Francisco</td>
+              <td align="left">567</td>
+              <td align="left">2018-03-12 10:11:00.008</td>
+              <td align="left">2018-03-12 10:17:42.6160</td>
+              <td align="left">402</td>
+              <td align="left">The Embarcadero at Steuart St</td>
+              <td align="left">37.79146400000001</td>
+              <td align="left">-122.391034</td>
+              <td align="left">S Park St at 3rd St</td>
+              <td align="left">37.7807601</td>
+              <td align="left">-122.3949894</td>
+              <td align="left">Subscriber</td>
+              <td align="left">1990.0</td>
+              <td align="left">Female</td>
+              <td align="left">28.0</td>
+            </tr>
+            <tr>
+              <td align="left">23312</td>
+              <td align="left">New York</td>
+              <td align="left">26190</td>
+              <td align="left">2018-02-21 19:38:47.000</td>
+              <td align="left">2018-02-21 19:41:30</td>
+              <td align="left">162</td>
+              <td align="left">Van Vorst Park</td>
+              <td align="left">40.71848892</td>
+              <td align="left">-74.047726625</td>
+              <td align="left">City Hall</td>
+              <td align="left">40.7177325</td>
+              <td align="left">-74.04384499999998</td>
+              <td align="left">Subscriber</td>
+              <td align="left">1987.0</td>
+              <td align="left">Male</td>
+              <td align="left">31.0</td>
+            </tr>
+            <tr>
+              <td align="left">154100</td>
+              <td align="left">San Francisco</td>
+              <td align="left">1100</td>
+              <td align="left">2018-02-14 09:55:01.427</td>
+              <td align="left">2018-02-14 09:59:28.0910</td>
+              <td align="left">266</td>
+              <td align="left">San Francisco Caltrain Station 2 (Townsend St at 4th St)</td>
+              <td align="left">37.77663920000001</td>
+              <td align="left">-122.3955263</td>
+              <td align="left">Townsend St at 7th St</td>
+              <td align="left">37.771058</td>
+              <td align="left">-122.402717</td>
+              <td align="left">Subscriber</td>
+              <td align="left">1963.0</td>
+              <td align="left">Male</td>
+              <td align="left">55.0</td>
+            </tr>
+            <tr>
+              <td align="left">275279</td>
+              <td align="left">San Francisco</td>
+              <td align="left">159</td>
+              <td align="left">2018-03-14 16:44:07.998</td>
+              <td align="left">2018-03-14 16:52:53.4110</td>
+              <td align="left">525</td>
+              <td align="left">Market St at 10th St</td>
+              <td align="left">37.776619</td>
+              <td align="left">-122.417385</td>
+              <td align="left">San Francisco Caltrain Station 2 (Townsend St at 4th St)</td>
+              <td align="left">37.77663920000001</td>
+              <td align="left">-122.3955263</td>
+              <td align="left">Subscriber</td>
+              <td align="left">1988.0</td>
+              <td align="left">Male</td>
+              <td align="left">30.0</td>
+            </tr>
+            <tr>
+              <td align="left">464568</td>
+              <td align="left">San Francisco</td>
+              <td align="left">4003</td>
+              <td align="left">2018-05-30 08:43:26.836</td>
+              <td align="left">2018-05-30 08:52:49.9870</td>
+              <td align="left">563</td>
+              <td align="left">Embarcadero BART Station (Beale St at Market St)</td>
+              <td align="left">37.792251</td>
+              <td align="left">-122.39708600000002</td>
+              <td align="left">The Embarcadero at Sansome St</td>
+              <td align="left">37.80477</td>
+              <td align="left">-122.403234</td>
+              <td align="left">Subscriber</td>
+              <td align="left">1973.0</td>
+              <td align="left">Male</td>
+              <td align="left">45.0</td>
+            </tr>
+            <tr>
+              <td align="left">249578</td>
+              <td align="left">San Francisco</td>
+              <td align="left">63</td>
+              <td align="left">2018-03-22 09:56:47.607</td>
+              <td align="left">2018-03-22 10:15:12.6760</td>
+              <td align="left">1105</td>
+              <td align="left">San Francisco Caltrain (Townsend St at 4th St)</td>
+              <td align="left">37.776598</td>
+              <td align="left">-122.395282</td>
+              <td align="left">Commercial St at Montgomery St</td>
+              <td align="left">37.794231</td>
+              <td align="left">-122.402923</td>
+              <td align="left">Subscriber</td>
+              <td align="left">1977.0</td>
+              <td align="left">Male</td>
+              <td align="left">41.0</td>
+            </tr>
+            <tr>
+              <td align="left">143008</td>
+              <td align="left">San Francisco</td>
+              <td align="left">2712</td>
+              <td align="left">2018-02-16 17:11:08.926</td>
+              <td align="left">2018-02-16 17:17:19.0250</td>
+              <td align="left">370</td>
+              <td align="left">Lake Merritt BART Station</td>
+              <td align="left">37.7973195</td>
+              <td align="left">-122.2653199</td>
+              <td align="left">2nd Ave at E 18th St</td>
+              <td align="left">37.800213566969795</td>
+              <td align="left">-122.25381016731262</td>
+              <td align="left">Subscriber</td>
+              <td align="left">1971.0</td>
+              <td align="left">Male</td>
+              <td align="left">47.0</td>
+            </tr>
+            <tr>
+              <td align="left">282930</td>
+              <td align="left">San Francisco</td>
+              <td align="left">3665</td>
+              <td align="left">2018-03-12 09:18:55.892</td>
+              <td align="left">2018-03-12 09:24:17.3930</td>
+              <td align="left">321</td>
+              <td align="left">Adeline St at 40th St</td>
+              <td align="left">37.8312769</td>
+              <td align="left">-122.2782669</td>
+              <td align="left">MacArthur BART Station</td>
+              <td align="left">37.82840997305853</td>
+              <td align="left">-122.26631462574005</td>
+              <td align="left">Subscriber</td>
+              <td align="left">1973.0</td>
+              <td align="left">Male</td>
+              <td align="left">45.0</td>
+            </tr>
+            <tr>
+              <td align="left">286944</td>
+              <td align="left">San Francisco</td>
+              <td align="left">2546</td>
+              <td align="left">2018-03-10 18:38:07.808</td>
+              <td align="left">2018-03-10 18:45:13.6220</td>
+              <td align="left">425</td>
+              <td align="left">Market St at 10th St</td>
+              <td align="left">37.776619</td>
+              <td align="left">-122.417385</td>
+              <td align="left">Powell St BART Station (Market St at 4th St)</td>
+              <td align="left">37.78637526861584</td>
+              <td align="left">-122.40490436553956</td>
+              <td align="left">Subscriber</td>
+              <td align="left">1978.0</td>
+              <td align="left">Male</td>
+              <td align="left">40.0</td>
+            </tr>
+            <tr>
+              <td align="left">518859</td>
+              <td align="left">San Francisco</td>
+              <td align="left">1073</td>
+              <td align="left">2018-05-20 11:32:36.153</td>
+              <td align="left">2018-05-20 11:46:24.0560</td>
+              <td align="left">827</td>
+              <td align="left">Harrison St at 17th St</td>
+              <td align="left">37.7638471</td>
+              <td align="left">-122.41300359999998</td>
+              <td align="left">Market St at 10th St</td>
+              <td align="left">37.776619</td>
+              <td align="left">-122.417385</td>
+              <td align="left">Subscriber</td>
+              <td align="left">1961.0</td>
+              <td align="left">Male</td>
+              <td align="left">57.0</td>
+            </tr>
+            <tr>
+              <td align="left">579331</td>
+              <td align="left">San Francisco</td>
+              <td align="left">3729</td>
+              <td align="left">2018-05-09 19:32:41.695</td>
+              <td align="left">2018-05-09 19:45:06.7560</td>
+              <td align="left">745</td>
+              <td align="left">Powell St BART Station (Market St at 5th St)</td>
+              <td align="left">37.78389935708493</td>
+              <td align="left">-122.40844488143921</td>
+              <td align="left">8th St at Ringold St</td>
+              <td align="left">37.774520401136854</td>
+              <td align="left">-122.4094493687153</td>
+              <td align="left">Subscriber</td>
+              <td align="left">1986.0</td>
+              <td align="left">Male</td>
+              <td align="left">32.0</td>
+            </tr>
+            <tr>
+              <td align="left">393529</td>
+              <td align="left">San Francisco</td>
+              <td align="left">2763</td>
+              <td align="left">2018-04-15 20:25:13.773</td>
+              <td align="left">2018-04-15 20:28:18.8980</td>
+              <td align="left">185</td>
+              <td align="left">Berry St at 4th St</td>
+              <td align="left">37.77588</td>
+              <td align="left">-122.39317</td>
+              <td align="left">3rd St at Townsend St</td>
+              <td align="left">37.77874161153677</td>
+              <td align="left">-122.39274082710837</td>
+              <td align="left">Subscriber</td>
+              <td align="left">1986.0</td>
+              <td align="left">Male</td>
+              <td align="left">32.0</td>
+            </tr>
+            <tr>
+              <td align="left">314040</td>
+              <td align="left">San Francisco</td>
+              <td align="left">2173</td>
+              <td align="left">2018-03-03 20:14:11.702</td>
+              <td align="left">2018-03-03 20:29:18.7860</td>
+              <td align="left">907</td>
+              <td align="left">San Francisco Ferry Building (Harry Bridges Plaza)</td>
+              <td align="left">37.795392</td>
+              <td align="left">-122.394203</td>
+              <td align="left">San Francisco Ferry Building (Harry Bridges Plaza)</td>
+              <td align="left">37.795392</td>
+              <td align="left">-122.394203</td>
+              <td align="left">Customer</td>
+              <td align="left"></td>
+              <td align="left"></td>
+              <td align="left"></td>
+            </tr>
+            <tr>
+              <td align="left">627512</td>
+              <td align="left">San Francisco</td>
+              <td align="left">484</td>
+              <td align="left">2018-05-01 16:26:55.973</td>
+              <td align="left">2018-05-01 16:45:39.1170</td>
+              <td align="left">1123</td>
+              <td align="left">Howard St at Beale St</td>
+              <td align="left">37.789756</td>
+              <td align="left">-122.394643</td>
+              <td align="left">4th St at Mission Bay Blvd S</td>
+              <td align="left">37.7704074</td>
+              <td align="left">-122.39119840000002</td>
+              <td align="left">Customer</td>
+              <td align="left">1989.0</td>
+              <td align="left">Female</td>
+              <td align="left">29.0</td>
+            </tr>
+            <tr>
+              <td align="left">629327</td>
+              <td align="left">San Francisco</td>
+              <td align="left">1617</td>
+              <td align="left">2018-05-01 09:52:26.504</td>
+              <td align="left">2018-05-01 10:01:36.1910</td>
+              <td align="left">549</td>
+              <td align="left">Berry St at 4th St</td>
+              <td align="left">37.77588</td>
+              <td align="left">-122.39317</td>
+              <td align="left">Esprit Park</td>
+              <td align="left">37.7616343</td>
+              <td align="left">-122.3906477</td>
+              <td align="left">Subscriber</td>
+              <td align="left">1993.0</td>
+              <td align="left">Male</td>
+              <td align="left">25.0</td>
+            </tr>
+            <tr>
+              <td align="left">163882</td>
+              <td align="left">San Francisco</td>
+              <td align="left">3460</td>
+              <td align="left">2018-02-12 10:59:14.095</td>
+              <td align="left">2018-02-12 11:07:24.4280</td>
+              <td align="left">490</td>
+              <td align="left">Lake Merritt BART Station</td>
+              <td align="left">37.7973195</td>
+              <td align="left">-122.2653199</td>
+              <td align="left">19th Street BART Station</td>
+              <td align="left">37.8090126</td>
+              <td align="left">-122.2682473</td>
+              <td align="left">Subscriber</td>
+              <td align="left">1977.0</td>
+              <td align="left">Male</td>
+              <td align="left">41.0</td>
+            </tr>
+            <tr>
+              <td align="left">428371</td>
+              <td align="left">San Francisco</td>
+              <td align="left">1564</td>
+              <td align="left">2018-04-07 08:57:18.992</td>
+              <td align="left">2018-04-07 09:07:54.4380</td>
+              <td align="left">635</td>
+              <td align="left">Broderick St at Oak St</td>
+              <td align="left">37.7730627</td>
+              <td align="left">-122.4390777</td>
+              <td align="left">Eureka Valley Recreation Center</td>
+              <td align="left">37.7591769</td>
+              <td align="left">-122.4369431</td>
+              <td align="left">Subscriber</td>
+              <td align="left">1984.0</td>
+              <td align="left">Male</td>
+              <td align="left">34.0</td>
+            </tr>
+            <tr>
+              <td align="left">482780</td>
+              <td align="left">San Francisco</td>
+              <td align="left">3792</td>
+              <td align="left">2018-05-26 13:22:55.535</td>
+              <td align="left">2018-05-26 13:33:17.5490</td>
+              <td align="left">622</td>
+              <td align="left">Esprit Park</td>
+              <td align="left">37.7616343</td>
+              <td align="left">-122.3906477</td>
+              <td align="left">Garfield Square (25th St at Harrison St)</td>
+              <td align="left">37.75101710000001</td>
+              <td align="left">-122.4119009</td>
+              <td align="left">Subscriber</td>
+              <td align="left">1988.0</td>
+              <td align="left">Male</td>
+              <td align="left">30.0</td>
+            </tr>
+            <tr>
+              <td align="left">240718</td>
+              <td align="left">San Francisco</td>
+              <td align="left">1096</td>
+              <td align="left">2018-03-24 17:14:22.452</td>
+              <td align="left">2018-03-24 17:22:32.1790</td>
+              <td align="left">489</td>
+              <td align="left">Powell St BART Station (Market St at 5th St)</td>
+              <td align="left">37.78389935708493</td>
+              <td align="left">-122.40844488143921</td>
+              <td align="left">11th St at Natoma St</td>
+              <td align="left">37.7735069</td>
+              <td align="left">-122.4160402</td>
+              <td align="left">Subscriber</td>
+              <td align="left">1987.0</td>
+              <td align="left">Male</td>
+              <td align="left">31.0</td>
+            </tr>
+            <tr>
+              <td align="left">364224</td>
+              <td align="left">San Francisco</td>
+              <td align="left">1695</td>
+              <td align="left">2018-04-22 17:31:05.100</td>
+              <td align="left">2018-04-22 17:49:40.7070</td>
+              <td align="left">1115</td>
+              <td align="left">San Francisco Caltrain (Townsend St at 4th St)</td>
+              <td align="left">37.776598</td>
+              <td align="left">-122.395282</td>
+              <td align="left">San Francisco Caltrain (Townsend St at 4th St)</td>
+              <td align="left">37.776598</td>
+              <td align="left">-122.395282</td>
+              <td align="left">Customer</td>
+              <td align="left">1967.0</td>
+              <td align="left">Male</td>
+              <td align="left">51.0</td>
+            </tr>
+            <tr>
+              <td align="left">138568</td>
+              <td align="left">San Francisco</td>
+              <td align="left">1738</td>
+              <td align="left">2018-02-18 11:50:59.996</td>
+              <td align="left">2018-02-18 14:10:23.4790</td>
+              <td align="left">8363</td>
+              <td align="left">O&#39;Farrell St at Divisadero St</td>
+              <td align="left">37.7824046019341</td>
+              <td align="left">-122.43944585323335</td>
+              <td align="left">The Embarcadero at Vallejo St</td>
+              <td align="left">37.799953</td>
+              <td align="left">-122.398525</td>
+              <td align="left">Customer</td>
+              <td align="left"></td>
+              <td align="left"></td>
+              <td align="left"></td>
+            </tr>
+
+        </table>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/jq-3.3.1/dt-1.10.18/sc-1.5.0/datatables.min.js"></script>
